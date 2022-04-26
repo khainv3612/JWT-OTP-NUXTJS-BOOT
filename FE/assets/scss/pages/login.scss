@@ -1,0 +1,66 @@
+.login {
+  width: 580px;
+  margin: 86px auto;
+  background: $color-white;
+  border-radius: 8px;
+  padding: 24px 50px;
+
+  label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &.register {
+    margin: 16px auto;
+  }
+
+  &.set-password {
+    margin: 125px auto;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  .sub-title {
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .check-remember {
+    margin-bottom: 24px;
+    justify-content: space-between;
+
+    .login-page__forgot-password {
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+
+  .login-button {
+    text-align: center;
+
+    button {
+      width: 300px;
+    }
+  }
+
+  .icon-show-pass {
+    position: relative;
+    top: 20%;
+    bottom: 20%;
+  }
+
+  .align-items-center {
+    margin: auto;
+    align-items: center;
+  }
+}
