@@ -1,0 +1,74 @@
+.register {
+
+  .dropdown-phone {
+    .el-input__inner {
+      width: 70px;
+      border-radius: 6px 0 0 6px !important;
+      padding-left: 15px;
+      border-style: solid;
+    }
+  }
+
+  .el-form-item {
+    padding-top: 10px
+  }
+
+  .el-select .el-input .el-select__caret {
+    display: none;
+  }
+
+  .el-input__prefix {
+    right: 5px;
+    left: unset;
+    top: 10px;
+  }
+
+  .img-arrow {
+  }
+
+  .content {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .captcha {
+    padding-top: 25px;
+  }
+
+  .el-autocomplete-suggestion .el-popper {
+    width: 80px;
+  }
+
+  .el-form-item.is-error .el-input-group__prepend .el-input__inner {
+    border-color: $color-border;
+  }
+
+  .code-phone {
+    .el-input {
+      input {
+        border-right: none;
+      }
+    }
+  }
+}
+
+.el-input--suffix .el-input__inner {
+  padding-left: 15px !important;
+  padding-right: 10px;
+}
+
+.pd-t-20 {
+  padding-top: 20px;
+}
+
+.el-input-group__append, .el-input-group__prepend {
+  padding: 0 0;
+  border: 1px;
+}
+
+.el-autocomplete-suggestion {
+  width: 90px !important;
+}

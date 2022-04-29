@@ -6,7 +6,7 @@
         <div class="notify-common">
           <NotificationBlock class="notify-mobile"/>
         </div>
-        <div :class="['home', homeClass]">
+        <div :class="['home']">
           <nuxt/>
         </div>
         <div v-if="$route.path === '/'">
@@ -19,7 +19,6 @@
         </div>
         <LoadingBar/>
       </div>
-      <FooterMobile v-if="$device.isMobile && this.$auth.loggedIn" class="bot-bar"/>
     </client-only>
   </div>
 </template>
@@ -29,13 +28,12 @@ import { mapState } from 'vuex'
 import LoadingBar from '../components/LoadingBar'
 import HeaderCommon from '../components/layout/HeaderCommon'
 import NotificationBlock from '../components/block-ui/NotificationBlock'
-import FooterMobile from '@/components/layout/FooterMobile'
 
 export default {
   name: 'DefaultLayout',
-  components: { FooterMobile, LoadingBar, NotificationBlock, HeaderCommon },
+  components: { LoadingBar, NotificationBlock, HeaderCommon },
   computed: {
-    ...mapState(['homeClass', 'isOtpPage'])
+    ...mapState(['isOtpPage'])
   }
 }
 </script>

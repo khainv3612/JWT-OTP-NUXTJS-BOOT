@@ -1,0 +1,151 @@
+.header {
+  .container-header {
+    max-width: $max-width;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+
+    .avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+    }
+
+    .change-language {
+      float: right;
+      position: absolute;
+      right: 8.33%;
+    }
+
+    .tab-list {
+      height: 22px;
+      width: max-content;
+      margin: 24px 0;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+      cursor: pointer;
+
+      .withdrawable-balance {
+        text-align: right;
+        margin-top: -9px;
+
+        span {
+          display: block;
+        }
+
+        .coin {
+          font-weight: 700;
+        }
+      }
+
+      .font-size-mobile {
+        font-size: 12px
+      }
+
+      .user-detail {
+        margin-left: 19px;
+        margin-top: -9px;
+        display: flex;
+
+        span {
+          margin: 9px 8px;
+          display: inline-block;
+        }
+      }
+
+      .image-dropdown {
+        position: relative;
+        top: -3px;
+      }
+    }
+
+    .active {
+      span {
+        color: $color-red-primary-500;
+        font-weight: 700;
+      }
+    }
+
+    .dropdown-language-inner {
+      ul {
+        left: 60% !important;
+      }
+    }
+  }
+
+  .image-favicon {
+    margin: 5px 10px 0;
+    width: 50px;
+    height: 50px;
+  }
+
+  .image-avatar {
+    width: 36px;
+    height: 36px;
+  }
+
+  .username {
+    max-width: 120px;
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  .username::-webkit-scrollbar {
+    width: 0 !important
+  }
+;
+
+}
+
+ul.margin-right-drop {
+  position: absolute;
+  left: 58% !important;
+  width: 40%;
+}
+
+.box-shadow-header {
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+}
+
+.pd-l-10 {
+  padding-left: 10px;
+}
+
+.el-dropdown-menu__item:focus, .el-dropdown-menu__item:not(.is-disabled):hover {
+  background-color: $background-item-header;
+  color: $color-item-header;
+}
+
+@media only screen and (max-width: 720px) {
+  .tab-list {
+    .el-dropdown-link {
+      margin-right: 32px;
+    }
+
+    .content-home {
+      margin: auto;
+    }
+  }
+  .otp {
+    .el-form {
+      .el-input__inner {
+        padding: 0 7px !important;
+      }
+    }
+  }
+  .code-sent-email {
+    line-height: 22px;
+    word-break: break-all;
+    margin-top: 10px;
+  }
+  .resend {
+    line-height: 22px;
+    margin-top: 25px;
+  }
+  .sub-title-mobile {
+    line-height: 22px;
+  }
+
+}
